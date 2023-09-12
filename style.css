@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -43,22 +43,19 @@ main {
     padding: 20px;
 }
 
-.section {
-    margin-bottom: 20px;
+/* Style the banner */
+.banner {
+    display: flex;
+    background-color: #f0f0f0; /* Background color for the banner */
     padding: 20px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the signup section */
 .signup-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.text-content {
     flex: 1;
+    padding: 20px;
 }
 
 .text-content h2 {
@@ -78,12 +75,51 @@ main {
     cursor: pointer;
 }
 
-/* Style the image placeholder */
+/* Style the image placeholder as a circle */
 .image-placeholder {
-    flex: 1;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
     background-color: #ccc; /* Placeholder background color */
-    height: 200px; /* Adjust the height as needed */
-    /* You can add more styles for the image placeholder here */
+    border-radius: 50%; /* Create a circle */
+    margin-left: 20px;
+}
+
+/* Style the section title */
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Style the sections container */
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style each section */
+.section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color for sections */
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Style the circle image placeholder within sections */
+.circle-image-placeholder {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    background-color: #ccc; /* Placeholder background color */
+    border-radius: 50%; /* Create a circle */
+    margin: 0 auto 10px auto;
+}
+
+/* Style section headings */
+.section h3 {
+    font-size: 20px;
 }
 
 /* Style the footer */
