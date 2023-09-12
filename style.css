@@ -94,18 +94,17 @@ main {
 /* Style the sections container */
 .sections-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Style each section */
 .section {
     flex: 1;
     padding: 20px;
-    background-color: #f0f0f0; /* Background color for sections */
-    border-radius: 10px;
     margin: 10px;
     text-align: center;
+    border-radius: 10px;
 }
 
 /* Style the circle image placeholder within sections */
@@ -122,10 +121,62 @@ main {
     font-size: 20px;
 }
 
+/* Style the quote banner */
+.quote-banner {
+    background-color: #f0f0f0; /* Background color for the quote banner */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the quote text */
+.quote {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the author text */
+.author {
+    font-size: 16px;
+    text-align: right;
+}
+
+/* Style the call to action (CTA) banner */
+.cta-banner {
+    background-color: #f0f0f0; /* Background color for the CTA banner */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the CTA text */
+.cta-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Style the CTA button */
+.cta-banner .signup-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 /* Style the footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
