@@ -6,8 +6,8 @@ body, h1, h2, h3, p, ul, li {
 
 /* Style header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #555; /* Dark gray */
+    color: #fff; /* White */
     padding: 20px 0;
 }
 
@@ -32,7 +32,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* White */
 }
 
 /* Style main content */
@@ -42,8 +42,22 @@ main {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background: linear-gradient(45deg, #141414, #ffffff); /* Gradient background animation */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
     padding: 20px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Style banner */
@@ -51,12 +65,19 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #fff; /* White */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s, cursor 0.2s;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .signup-section {
@@ -67,28 +88,37 @@ main {
 /* Style text content */
 .text-content h2 {
     font-size: 24px;
-    color: #333;
+    color: #444; /* Dark gray */
 }
 
 .text-content p {
     font-size: 16px;
-    color: #666;
+    color: #666; /* Gray */
 }
 
+/* Style rounded and eye-catching signup button */
 .signup-button {
-    background-color: #333;
-    color: #fff;
+    background-color: #555; /* Dark gray */
+    color: #fff; /* White */
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s, cursor 0.2s;
+}
+
+.signup-button:hover {
+    background-color: #ff9900; /* Eye-catching color on hover */
+    transform: scale(1.05); /* Slight scale up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow on hover */
 }
 
 /* Style image placeholder */
 .image-placeholder {
     width: 150px;
     height: 150px;
-    background-color: #ccc;
+    background-color: #ccc; /* Light gray */
     border-radius: 50%;
     margin-left: 20px;
 }
@@ -97,7 +127,7 @@ main {
 .section-title {
     font-size: 24px;
     margin-top: 20px;
-    color: #333;
+    color: #444; /* Dark gray */
 }
 
 /* Style sections container */
@@ -115,44 +145,59 @@ main {
     flex: 1;
     padding: 20px;
     margin: 10px;
-    background-color: #fff;
+    background-color: #fff; /* White */
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s, cursor 0.2s;
+}
+
+.section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 /* Style circle image placeholders within sections */
 .circle-image-placeholder {
     width: 100px;
     height: 100px;
-    background-color: #ccc;
+    background-color: #ccc; /* Light gray */
     border-radius: 50%;
     margin: 0 auto 10px auto;
 }
 
 /* Style quote banner */
 .quote-banner {
-    background-color: #f0f0f0;
+    background-color: #eee; /* Light gray */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s, cursor 0.2s;
+}
+
+.quote-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 /* Style quote text */
 .quote {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: #444; /* Dark gray */
 }
 
 /* Style author text */
 .author {
     font-size: 16px;
     text-align: right;
-    color: #666;
+    color: #666; /* Gray */
 }
 
 /* Style call to action (CTA) banner */
@@ -160,13 +205,21 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #fff; /* White */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s, cursor 0.2s;
+}
+
+.cta-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .cta-text {
@@ -175,18 +228,26 @@ main {
 }
 
 .cta-banner .signup-button {
-    background-color: #333;
-    color: #fff;
+    background-color: #555; /* Dark gray */
+    color: #fff; /* White */
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s, cursor 0.2s;
+}
+
+.cta-banner .signup-button:hover {
+    background-color: #ff9900; /* Eye-catching color on hover */
+    transform: scale(1.05); /* Slight scale up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow on hover */
 }
 
 /* Style footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #555; /* Dark gray */
+    color: #fff; /* White */
     text-align: center;
     padding: 10px 0;
 }
